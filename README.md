@@ -4,7 +4,7 @@
 
 <br>
 
-### <a href="https://transitions-animation.vercel.app//">Visit the project in Vercel.</a>
+### <a href="https://transitions-animations.vercel.app/">Visit the project in Vercel.</a>
 
 <br>
 
