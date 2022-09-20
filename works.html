@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Quirino</title>
+
+    <!-----------------------STYLE------------------STYLE---------------------- STYLE -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/transitions.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@700&family=DynaPuff:wght@600;700&family=Roboto+Slab:wght@100;200;300&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <!-----------------------CONTENT------------------CONTENT---------------------- CONTENT -->
+    <div class="container">
+        <header>
+            <nav class="navigationScrollSideTop fadeInRightBig">
+                <menu class="menuItem"><a href="#home" title="Home">Home</a></menu>
+                <menu class="menuItem"><a href="#about" title="About">About</a></menu>
+                <menu class="menuItem"><a href="#works" title="Works">Works</a></menu>
+            </nav>
+            <div class="icons">
+                <menu class="menuIcon"><a href="https://github.com/lucas-quirino" title="GitHub" alt="GitHub"
+                        target="_blank"><img src="assets/images/octocat2.svg" alt="github"
+                            class="github-icon  menu-icon"></a></menu>
+                <menu class="menuIcon"><a href="https://www.linkedin.com/in/lucas-quirino-dev/" title="Linkedin"
+                        alt="Linkedin" target="_blank"><img src="assets/images/linkedin.svg" alt="linkedin"
+                            class="linkedin-icon  menu-icon"></a></menu>
+            </div>
+        </header>
+
+        <main>
+            <section class="column content-colum1">
+                <hgroup class="fadeInLeftBig">
+                    <div>
+                        <h3>Let's give</h3>
+                    </div>
+                    <div>
+                        <h2> the mind <span>a</span></h2>
+                    </div>
+                    <div>
+                        <h1 id="shake">shake?</h1>
+                    </div>
+                </hgroup>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+
+    <!---
+        PNG FILES
+    -->
+    <div class="pngFiles">
+        <img src="assets/images/giphy1.gif" alt="Gif Iron Man" id="gif-iron">
+        <img src="assets/images/giphy14.gif" alt="Gif clouds" id="gif-cloud">
+        <img src="assets/images/giphy14.gif" alt="Gif clouds" id="gif-cloud2">
+        <img src="assets/images/giphy13.gif" alt="Gif cactus" id="gif-cactus">
+        <img src="assets/images/giphy6.gif" alt="Gif bike" id="gif-bike">
+        <img src="assets/images/giphy4.gif" alt="Gif gary do bob esponja" id="gif-gary">
+        <img src="assets/images/giphy9.gif" alt="Gif sonic roll" id="gif-sonic-roll">
+        <img src="assets/images/giphy5.gif" alt="Gif sonic" id="gif-sonic">
+    </div>
+
+    <section class="css-doodle1">
+        <css-doodle click-to-update>
+            :doodle {
+            --rspeed: @r(28s, 35s);
+            --delay: @r(-200ms, -10ms);
+            --cycle: @r(.5s, 2.5s);
+            --angle: @r(2deg, 4deg);
+            --da: @r(1vmin, 8vmin);
+            --db: @r(1vmin, 8vmin);
+            --bg: hsl(@r(70), 10%, 30%);
+            @grid: 1x200 / 50vmin;
+            animation: r var(--rspeed) linear infinite;
+            width: 60em; height: 50em;
+            }
+
+            @size: 1px 100%;
+            @place-cell: center;
+            transform: rotate(calc(
+            @calc(@i() - 1) * var(--angle)
+            ));
+
+            :after {
+            content: '';
+            @size: 100%;
+            background: var(--menu-color);
+            will-change: transform;
+            animation:
+            w var(--cycle) linear
+            calc(@i() * var(--delay)) infinite;
+            }
+
+            --f: calc(@sin(@i() / 4) * @PI());
+
+            @keyframes w {
+            0 { transform: translateY(calc(var(--da) * var(--f))) }
+            50% { transform: translateY(calc(var(--db) * var(--f))) }
+            }
+            @keyframes r {
+            to { transform: rotate(@p(-1turn, 1turn)) }
+            }
+        </css-doodle>
+    </section>
+
+    <!--------------JS CODE CODE JS CODE ------------------ -->
+    <script src="https://unpkg.com/css-doodle@0.29.0/css-doodle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
